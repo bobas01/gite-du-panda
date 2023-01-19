@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+/* header desktop */
+header{
+    background-color: #468C98;
+}
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+#logo {
+    float: left;
+}
+#main-menu {
+    float: right;
+
+    
+}
+#main-menu>ul {
+    display: flex;
+    margin-right: 150px;
+}
+#main-menu>ul > li {
+    list-style: none;
+    display: block;
+    
+}
+#main-menu>ul > li >a {
+    height: 50px;
+    display: block;
+    padding: 0 15px;
+    background-color: #468C98;
+    line-height: 50px;
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+#burger, #close{
+    display: none;
+}
+#header {
+    width: 100%;
+    background-color:rgba(70, 140, 152, .2);
+   
+}
+#title {
+    color: white;
+    position: absolute;
+    top: 19%;
+    right: 42%;
+    
+}
+iframe {
+    margin: 0 auto;
+    max-width: 560px;
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+
+/* phone header */
+
+
+@media screen and (max-width : 375px) {
+    #main-menu {
+        display: none;
+        text-decoration: none;
+        color: #000;
+        font-size: 14;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        overflow: auto;
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        
+
+    }
+
+    #main-menu.active {
+        display: block;
+        height: 30vh;
+        background-color: #468C98;
+        opacity: 1;
+        
+
+    }
+
+    #main-menu ul {
+        flex-direction: column;
+        
+        list-style-type: none;
+        width: 100%;
+    }
+
+    #burger {
+        display: block;
+        float: right;
+        margin: 10px 10px 0 0;
+        cursor: pointer;
+        
+    }
+
+    #main-menu>ul>li {
+        width: 100%;
+        border: 1px solid #999;
+        background-color: #468C98;
+    }
+    #main-menu>ul>li>a {
+
+        text-align: center;
+        background-color: #468C98;
+        color: black;
+        
+        height: 50px;
+        
+        padding: 0 15px;
+        line-height: 50px;
+        
+        transition: all 0.5s ease;
+    }
+
+    #main-menu.active>ul>li:hover>a {
+        background-color: white;
+        color: #468C98;
+    }
+
+    #close {
+        display: block;
+        font-size: 2rem;
+        color: #000;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+    }
+    iframe {
+        width: 375px;
+        
+    }
+    #title {
+        
+        position: absolute;
+        top: 15%;
+        right: 25%;
+        color: rgb(248, 248, 248);
+    }
+    #title h1, h2{
+        text-align: center;
+    }
+    #title hr {
+        color: white;
+    }
+
+}
+
+
+/* phone header */
+
+
+@media screen and (max-width : 375px) {
+    
+}
+
+
+
