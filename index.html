@@ -20,10 +20,10 @@
                 <div id="close">X</div>
                 <ul>
                     <li><a href="#gite">Le gite</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">Tarifs</a></li>
-                    <li><a href="#">Réservation</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#activity">Activités</a></li>
+                    <li><a href="#price">Tarifs</a></li>
+                    <li><a href="#reservation">Réservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -45,29 +45,120 @@
     </section>
     <section id="gite">
         <div class="row-limit-size">
+
             <div id="txtgite">
-                <h2>Nos gites</h2>
+                <h2 class="blue">Nos gites</h2>
                 <p>Nos gites vous proposent un coin entouré de verdure et proche de la mer ainsi qu’une piscine.
                     On y trouve des gites pour tous : seul (qui veut retrouver du calme et de la sérénité et qui sait
-                    faire
-                    une rencontre), en couple (pour un séjour romantique) , en famille (pour se retrouver ensemble et
-                    partager de bon moment) ou entre amis (pour des sejour sportifs et détentes).
+                    faire une rencontre), en couple (pour un séjour romantique) , en famille (pour se retrouver ensemble
+                    et
+                    partager de bon moment) ou entre amis (pour des sejour sportifs et détentes). <br>
                     Le petit déjeuner est inclus avec nos produits locaux de 7h à 10h dans les cuisines communes.
                     Plusieurs type de chambre : lit double ou lit simple ou dortoire.
                 </p>
             </div>
-            <div id="imgite">
-                <img src="./img/gite.png" alt="Le domaine">
-                <img src="./img/piscine.jpg" alt="La piscine">
-                <img src="./img//déjeuner.jpg" alt="Le petit déjeuner">
-                <img src="./img/cuisine.jpg" alt="La cuisine">
-                <img src="./img/chambre couple.jpeg" alt="Chambre couple">
-                <img src="./img/chambre lit simple.jpg" alt="Chambre lit simple">
-            </div>
+            <figcaption id="imgite">
+                <img class="big" src="./img/gite.png" alt="Le domaine">
+                <img class="mini" src="./img/piscine.jpg" alt="La piscine">
+                <img class="mini" src="./img//déjeuner.jpg" alt="Le petit déjeuner">
+                <img class="big" src="./img/cuisine.jpg" alt="La cuisine">
+                <img class="big" src="./img/chambre couple.jpeg" alt="Chambre couple">
+                <img class="mini" src="./img/chambre lit simple.jpg" alt="Chambre lit simple">
+            </figcaption>
 
 
         </div>
     </section>
+    <section id="activity">
+        <h2 class="blue">Activités</h2>
+        <div class="row-limit-size">
+            <figcaption id="imgActivity">
+                <img class="big" src="./img/baie.jpg" alt="La baie de somme">
+                <img class="mini" src="./img/jardin de valoir.jpg" alt="Les jardins de la Valoir">
+                <img class="mini" src="./img/st_valery_sur_somme_night3.jpg" alt="Le chateau de St Valery sur Somme">
+                <img class="big" src="./img/eglise Rue.jpg" alt="L'église de Rue'">
+                <img class="big" src="./img/train.jpg" alt="Le petit train de la baie de somme">
+                <img class="mini" src="./img/phoque.jpg" alt="phoque">
+            </figcaption>
+            <article id="txtActivity">
+                <p>Proche de nos gites vous avez plusieurs activités à faire comme la visite
+                    de lieux historiques (chateau de blabla, église de blabla). Ainsi que les
+                    bords de la Manche avec de longues plages et leur faune (phoques,
+                    oiseaux ...). Et un moyen de transport sympathique : le petit train de la
+                    Baie de Somme. </p>
+                <img src="./img/baie-de-somme-carte.jpg" alt="Carte activités">
+            </article>
+
+        </div>
+    </section>
+    <section id="price">
+        <div class="row-limit-size">
+            <h2 class="blue">Tarifs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="empty-cells: hide;"></th>
+                        <th>1 nuit <br> saison /hors-saison</th>
+                        <th>Un weekend <br> saison /hors-saison</th>
+                        <th>Une semaine <br> saison /hors-saison</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>1-2 personnes</th>
+                    <td>40$ / 25$</td>
+                    <td>75$ / 60$</td>
+                    <td>210$ / 190$</td>
+                </tr>
+                <tr>
+                    <th>3-4 personnes</th>
+                    <td>60$ / 45$</td>
+                    <td>115$ / 100$</td>
+                    <td>300$ / 270$</td>
+                </tr>
+                <tr>
+                    <th>6-10 personnes</th>
+                    <td>100$ / 85$</td>
+                    <td>180$ / 165$</td>
+                    <td>600$ / 550$</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="row-limit-size">
+            <article id="leftFooter">
+                <h2 class="brown">Réservation</h2>
+                <div id="txtFooter">
+                    <h5>Par téléphone</h5>
+                    <a href="tel:+33102030405">+33 (0)1 02 03 04 05</a>
+                    <h5>Adresse</h5>
+                    <p>20 rue du pif au mettre <br>
+                        80550 Crotoy</p>
+                </div>
+            </article>
+            <article id="rightFooter">
+                <h2 class="brown">Contact</h2>
+                <form action="" method="post">
+                    <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" id="email" placeholder="Votre adresse mail" required>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Ecrivez votre message"></textarea>
+                    <button>Envoyez</button>
+                </form>
+
+            </article>
+
+        </div>
+        <div id="end">
+            <h6>© frombobas2023</h6>
+            <figcaption id="icon">
+                <img src="./img/🦆 icon _facebook outline_.svg" alt="_facebook">
+                <img id="twit" src="./img/Vector.svg" alt="twitter">
+                <img id="insta" src="./img/instagram.png" alt="instagram">
+            </figcaption>
+        </div>
+    </footer>
+
     <script src="./main.js"></script>
 </body>
 
