@@ -5,6 +5,7 @@
 
 }
 
+
 /* header desktop */
 header {
     background-color: #468C98;
@@ -68,8 +69,8 @@ header {
 #title {
     color: white;
     position: absolute;
-    top: 15%;
-    right: 35%;
+    top: 20%;
+    right: 32%;
     font-size: 3rem;
 
 }
@@ -229,6 +230,10 @@ p {
     padding: 10px 0;
 }
 
+#imgite img {
+    padding: 10px 0;
+}
+
 .big {
     width: 342px;
     height: 155px;
@@ -257,7 +262,7 @@ p {
 
     #txtgite {
         width: 360px;
-        padding: 0 10px;
+        padding-right: 0;
     }
 
     .blue {
@@ -291,6 +296,7 @@ p {
 
 #activity {
     background-color: rgba(70, 140, 152, .2);
+
 }
 
 #activity h2 {
@@ -298,17 +304,58 @@ p {
     padding: 60px 0;
 }
 
-#imgActivity {
-    width: 50%;
+
+#slider {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     float: left;
+    margin-top: 50px;
+    width: 50%;
+    position: relative;
+}
+
+#leftArrow,
+#rightArrow {
+    
+    
+    opacity: .1;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+#leftArrow {
+    top: 40%;
+    left: 5%;
+}
+
+#rightArrow {
+    top: 40%;
+    right: 20%;
+}
+
+#leftArrow:hover,
+#rightArrow:hover {
+    opacity: 1;
+}
+
+#window-slider {
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+}
+
+.slide img {
+    width: 500px;
+    height: 400px;
+}
+
+#list-slide {
+    display: flex;
 }
 
 #txtActivity {
     float: right;
-    width: 45%;
+    width: 40%;
 }
 
 #txtActivity img {
@@ -325,8 +372,40 @@ p {
 /* media screen activity */
 
 @media screen and (max-width : 375px) {
+    #activity h2 {
+        padding-bottom: 10px;
+    }
+
+    #slider {
+        float: none;
+        justify-content: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    #window-slider {
+        height: 250px;
+        width: 355px;
+    }
+
+    .slide img {
+
+        height: 200px;
+    }
+
+    #leftArrow {
+        top: 20%;
+        left: 5%;
+    }
+
+    #rightArrow {
+        top: 20%;
+        right: 5%;
+    }
+
     #txtActivity {
         float: none;
+        
     }
 
     #imgActivity {
@@ -335,17 +414,12 @@ p {
         justify-content: center;
     }
 
-    #imgActivity img {
-        width: 355px;
-        height: 200px;
-
-
-    }
 
     #txtActivity p {
-        margin: 20px 10px;
+        padding-left: 10px;
         text-align: left;
         width: 355px;
+        padding-top: 0;
     }
 
     #txtActivity img {
@@ -479,10 +553,12 @@ button {
     float: right;
     height: 25px;
     line-height: 25px;
+    padding-bottom: 1%;
+
 }
 
 #twit {
-    padding-bottom: 4px;
+    padding-bottom: 18%;
 }
 
 #icon #insta {
