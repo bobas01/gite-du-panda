@@ -408,7 +408,7 @@ p {
         float: left;
         width: 40%;
         padding-top: 6%;
-       
+
     }
 
     #txtActivity img {
@@ -503,6 +503,7 @@ td {
     background-color: white;
     text-align: center;
 }
+
 /* tablet price */
 @media screen and (max-width : 850px) {
     #price table {
@@ -510,6 +511,7 @@ td {
         height: 60vh;
     }
 }
+
 /* media screen price */
 
 @media screen and (max-width : 375px) {
@@ -528,11 +530,13 @@ footer {
     padding-top: 30px;
     background-color: rgb(226, 218, 186);
 }
+
 .brown {
     color: #796A49;
     font-size: 40px;
     padding-bottom: 30px;
 }
+
 #leftFooter {
     float: left;
     width: 50%;
@@ -619,20 +623,22 @@ button {
     height: 25px;
     width: 25px;
 }
+
 /* tablet footer */
 @media screen and (max-width : 850px) {
     #leftFooter {
         padding-left: 5%;
     }
-   
+
     #icon #insta {
-        width:25px;
+        width: 25px;
         height: 25px;
 
     }
+
     #rightFooter h2 {
         padding-bottom: 20px;
-       padding-right: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -668,10 +674,11 @@ button {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     #icon #insta {
         height: 100%;
-        
+
     }
-    
+
 
 }
