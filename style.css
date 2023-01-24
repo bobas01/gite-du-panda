@@ -398,6 +398,14 @@ p {
         margin: 0 auto;
     }
 
+    #leftArrow {
+        display: none;
+    }
+
+    #rightArrow {
+        display: none;
+    }
+
     #txtActivity {
         float: none;
         padding: 5% 0 0 5%;
@@ -441,15 +449,11 @@ p {
     }
 
     #leftArrow {
-        top: 35%;
-        left: 5%;
-
+        display: none;
     }
 
     #rightArrow {
-        top: 35%;
-        right: 5%;
-
+        display: none;
     }
 
     #txtActivity {

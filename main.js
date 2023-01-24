@@ -47,13 +47,13 @@ let currentSlide = 0;
 
 function nextSlide() {
    slide[currentSlide].style.display = "none";
-   currentSlide = (currentSlide + 1) % slide.length;
+   currentSlide = (currentSlide + 1) % nbSlide;
    slide[currentSlide].style.display = "block";
 }
 
 function prevSlide() {
    slide[currentSlide].style.display = "none";
-   currentSlide = (currentSlide - 1 + slide.length) % slide.length;
+   currentSlide = (currentSlide - 1 + nbSlide) % nbSlide;
    slide[currentSlide].style.display = "block";
 }
 
