@@ -12,6 +12,7 @@ btClose.addEventListener('click', function () {
 let rightArrow = document.getElementById('rightArrow');
 let leftArrow = document.getElementById('leftArrow');
 let windowSlider = document.getElementById('window-slider').offsetWidth;
+let listSlide = document.getElementById('list-slide')
 let slide = document.getElementsByClassName('slide');
 let nbSlide = slide.length;
 let mLeft = 0;

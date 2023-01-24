@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
-
+    box-sizing: border-box;
 }
 
 
@@ -31,7 +31,7 @@ header {
 
 #main-menu>ul {
     display: flex;
-    margin-right: 150px;
+    margin-right: 1vw;
 }
 
 #main-menu>ul>li {
@@ -41,7 +41,7 @@ header {
 }
 
 #main-menu>ul>li>a {
-    height: 50px;
+    height: 100%;
     display: block;
     padding: 0 15px;
     background-color: #468C98;
@@ -69,7 +69,7 @@ header {
 #title {
     color: white;
     position: absolute;
-    top: 20%;
+    top: 15%;
     right: 32%;
     font-size: 3rem;
 
@@ -88,6 +88,15 @@ hr {
     color: white;
     height: 2px;
     background-color: white;
+}
+
+/* tablet header */
+@media screen and (max-width : 850px) {
+    #title {
+        position: absolute;
+        top: 40%;
+        right: 15%;
+    }
 }
 
 /* phone header */
@@ -145,12 +154,9 @@ hr {
         text-align: center;
         background-color: #468C98;
         color: black;
-
-        height: 50px;
-
         padding: 0 15px;
+        height: 50px;
         line-height: 50px;
-
         transition: all 0.5s ease;
     }
 
@@ -164,8 +170,8 @@ hr {
         font-size: 2rem;
         color: #000;
         position: absolute;
-        right: 10px;
-        top: 5px;
+        right: 5%;
+        top: 1%;
         cursor: pointer;
     }
 
@@ -246,6 +252,24 @@ p {
     padding: 10px 0;
 }
 
+/* gite tablette */
+@media screen and (max-width : 850px) {
+    #txtgite {
+        float: none;
+        width: 90%;
+    }
+
+    #imgite {
+        float: none;
+        padding: 5% 5%;
+    }
+
+    #imgite img {
+        width: 45%;
+
+    }
+}
+
 /* gite phone */
 
 
@@ -261,8 +285,9 @@ p {
     }
 
     #txtgite {
-        width: 360px;
+        width: 90%;
         padding-right: 0;
+        padding-left: 5%;
     }
 
     .blue {
@@ -273,12 +298,12 @@ p {
     p {
         font-size: 0.8rem;
         font-weight: bold;
-        padding: 30px 0;
+        padding: 10% 0;
     }
 
     #imgite {
         width: 100%;
-        /* text-align: center; */
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -287,7 +312,7 @@ p {
     #imgite img {
         width: 365px;
         height: 200px;
-        padding: 10px 0;
+        padding: 2% 0;
     }
 
 }
@@ -315,8 +340,6 @@ p {
 
 #leftArrow,
 #rightArrow {
-    
-    
     opacity: .1;
     transition: all .5s ease;
     cursor: pointer;
@@ -368,19 +391,44 @@ p {
 }
 
 
+/* tablet activity */
+@media screen and (max-width : 850px) {
+    #slider {
+        float: none;
+        margin: 0 auto;
+    }
 
-/* media screen activity */
+    #txtActivity {
+        float: none;
+        padding: 5% 0 0 5%;
+        width: 90%;
+    }
+
+    #txtActivity p {
+        float: left;
+        width: 40%;
+        padding-top: 6%;
+       
+    }
+
+    #txtActivity img {
+        float: right;
+        width: 40%;
+    }
+}
+
+/* phone activity */
 
 @media screen and (max-width : 375px) {
     #activity h2 {
-        padding-bottom: 10px;
+        padding-bottom: 1%;
     }
 
     #slider {
         float: none;
         justify-content: center;
         width: 90%;
-        margin-left: 20px;
+        margin-left: 5%;
     }
 
     #window-slider {
@@ -389,23 +437,24 @@ p {
     }
 
     .slide img {
-
-        height: 200px;
+        height: 30vh;
     }
 
     #leftArrow {
-        top: 20%;
+        top: 35%;
         left: 5%;
+
     }
 
     #rightArrow {
-        top: 20%;
+        top: 35%;
         right: 5%;
+
     }
 
     #txtActivity {
         float: none;
-        
+
     }
 
     #imgActivity {
@@ -419,13 +468,15 @@ p {
         padding-left: 10px;
         text-align: left;
         width: 355px;
-        padding-top: 0;
+        padding: 20% 5%;
+        float: none;
     }
 
     #txtActivity img {
-        width: 355px;
-        margin: 0 10px;
+        width: 90%;
+        margin-left: 8%;
         padding-top: 0;
+        float: none;
     }
 
 }
@@ -452,33 +503,36 @@ td {
     background-color: white;
     text-align: center;
 }
-
+/* tablet price */
+@media screen and (max-width : 850px) {
+    #price table {
+        width: 90%;
+        height: 60vh;
+    }
+}
 /* media screen price */
 
 @media screen and (max-width : 375px) {
     #price table {
-        width: 361px;
-        height: 424px;
+        width: 90%;
+        height: 60vh;
     }
 }
 
-/* footer desktop */
-footer {
 
+
+
+
+/* desktop footer */
+footer {
+    padding-top: 30px;
     background-color: rgb(226, 218, 186);
 }
-
 .brown {
     color: #796A49;
     font-size: 40px;
     padding-bottom: 30px;
 }
-
-/* desktop footer */
-footer {
-    padding-top: 30px;
-}
-
 #leftFooter {
     float: left;
     width: 50%;
@@ -515,7 +569,7 @@ footer {
 #message,
 button {
     width: 90%;
-    margin: 10px 0;
+    margin: 1% 0;
     font-weight: bold;
     font-family: 'PT sans', sans-serif;
     font-size: 1rem;
@@ -524,7 +578,7 @@ button {
 #rightFooter button {
     color: white;
     background-color: #AB2424;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
     border: none;
 }
 
@@ -558,12 +612,28 @@ button {
 }
 
 #twit {
-    padding-bottom: 18%;
+    padding-bottom: 5%;
 }
 
 #icon #insta {
     height: 25px;
     width: 25px;
+}
+/* tablet footer */
+@media screen and (max-width : 850px) {
+    #leftFooter {
+        padding-left: 5%;
+    }
+   
+    #icon #insta {
+        width:25px;
+        height: 25px;
+
+    }
+    #rightFooter h2 {
+        padding-bottom: 20px;
+       padding-right: 10%;
+    }
 }
 
 /* media phone footer */
@@ -581,7 +651,7 @@ button {
     }
 
     #txtFooter {
-        padding: 30px 0 0 10px;
+        padding: 5% 0 0 5%;
     }
 
     #txtFooter h5 {
@@ -598,5 +668,10 @@ button {
         flex-wrap: wrap;
         justify-content: center;
     }
+    #icon #insta {
+        height: 100%;
+        
+    }
+    
 
 }
