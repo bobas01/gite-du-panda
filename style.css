@@ -53,9 +53,10 @@ header {
     font-size: 1rem;
 
 }
+
 #main-menu>ul>li:hover a {
     transform: scale(1.2);
-    color :rgb(171, 36, 36);
+    color: rgb(171, 36, 36);
 
 }
 
@@ -171,8 +172,7 @@ iframe {
         position: relative;
     }
 
-    #header #title 
-     {
+    #header #title {
         color: rgb(254, 252, 247);
         position: absolute;
         right: 15%;
@@ -235,7 +235,7 @@ p {
 }
 
 /* gite tablette */
-@media screen and (max-width : 850px) {
+@media screen and (max-width : 1200px) {
     #txtgite {
         float: none;
         width: 90%;
@@ -371,24 +371,17 @@ p {
 #txtActivity p {
     padding-top: 10px;
 }
+
 #swipe {
     display: none;
 }
 
 
 /* tablet activity */
-@media screen and (max-width : 850px) {
+@media screen and (max-width : 1200px) {
     #slider {
         float: none;
         margin: 0 auto;
-    }
-
-    #leftArrow {
-        display: none;
-    }
-
-    #rightArrow {
-        display: none;
     }
 
     #txtActivity {
@@ -408,12 +401,15 @@ p {
         float: right;
         width: 50%;
     }
+
+    
+}
+@media screen and (max-width : 850px) {
     #swipe {
         display: block;
         padding: 10px 46%;
     }
 }
-
 /* phone activity */
 
 @media screen and (max-width : 375px) {
@@ -455,6 +451,7 @@ p {
         float: none;
         justify-content: center;
     }
+
     #swipe {
         display: block;
         padding: 10px 43%;
@@ -502,7 +499,7 @@ td {
 }
 
 /* tablet price */
-@media screen and (max-width : 850px) {
+@media screen and (max-width : 1200px) {
     #price table {
         width: 90%;
         height: 60vh;
@@ -565,7 +562,7 @@ footer {
 #rightFooter {
     display: flex;
     flex-wrap: wrap;
-    
+
 
 }
 
@@ -627,7 +624,7 @@ button {
 }
 
 /* tablet footer */
-@media screen and (max-width : 850px) {
+@media screen and (max-width : 1200px) {
     #leftFooter {
         padding-left: 5%;
     }
@@ -657,8 +654,9 @@ button {
         float: none;
         width: 100%;
     }
-    #rightFooter > .brown {
-       padding-left: 20px;
+
+    #rightFooter>.brown {
+        padding-left: 20px;
     }
 
     #txtFooter {
