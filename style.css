@@ -104,22 +104,18 @@ iframe {
         position: absolute;
         top: 0;
         z-index: 9999;
-
+        overflow: auto;
 
     }
 
     #main-menu.active {
         display: block;
-        height: 30vh;
         background-color: rgb(254, 252, 247);
         opacity: 1;
-
-
     }
 
     #main-menu ul {
         flex-direction: column;
-
         list-style-type: none;
         width: 100%;
     }
@@ -151,7 +147,7 @@ iframe {
 
     #main-menu.active>ul>li:hover>a {
         background-color: white;
-        color: #468C98;
+
     }
 
     #close {
@@ -402,14 +398,16 @@ p {
         width: 50%;
     }
 
-    
+
 }
+
 @media screen and (max-width : 850px) {
     #swipe {
         display: block;
         padding: 10px 46%;
     }
 }
+
 /* phone activity */
 
 @media screen and (max-width : 375px) {
